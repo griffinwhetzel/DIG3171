@@ -125,27 +125,42 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
     <script> /* In the var immediately below, copy-paste your Tracery/CBDQ JSON between the {} brackets */
     var obj = {
       
-	{"origin" [ 
-
-#topic# is #effect# on #jobs#, however, #topic# can be #solo# within itself to do such things like #tasks#, which #action# jobs. 
-
-#jobs# are #effect# towards #topic#, however,  #topic# #action# future #jobs# due to it being #solo# with #tasks# 
-
-] 
-
-"topic" [AI, Artificial Intelligence, Machine Intelligence], 
-
-"effect" [Supportive, helpful, positive],  
-
-"jobs" [Teachers, School Workers, Professors] 
-
-"solo" [Self-sufficient, independent, self-reliable] 
-
-"tasks"[teach, lesson plan, study plan] 
-
-"action"[limits, takes away, removes], 
-
-} 
+	{
+	"topic": [
+		"AI",
+		"Artifical Intelligence",
+		"Machine Intelligence"
+	],
+	"effect": [
+		"supportive",
+		"helpful",
+		"positive"
+	],
+	"jobs": [
+		"teachers",
+		"school workers",
+		"professors"
+	],
+	"tasks": [
+		"teach",
+		"lesson plan",
+		"study plan"
+	],
+	"solo": [
+		"self-sufficient",
+		"indepencent",
+		"self-reliable"
+	],
+	"action": [
+		"limits",
+		"takes away",
+		"removes"
+	],
+	"origin": [
+		"#topic# is #effect# on #jobs#, however, #topic# can be #solo# within itself to do such things like #tasks#, which #action# jobs.",
+		"#jobs# are #effect# towards #topic#, however, #topic# #action# future #jobs# due to it being #solo# with #tasks#."
+	]
+}
 function generateString(rule) {
   return expandRule(rule);
 }
